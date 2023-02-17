@@ -17,36 +17,42 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
         Toast.makeText(MainActivity.this, "onStart", duration).show();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
+
         Toast.makeText(MainActivity.this, "onRestart", duration).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
         Toast.makeText(MainActivity.this, "onResume", duration).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+
         Toast.makeText(MainActivity.this, "onPause", duration).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
+
         Toast.makeText(MainActivity.this, "onStop", duration).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         Toast.makeText(MainActivity.this, "onDestroy", duration).show();
     }
 }
