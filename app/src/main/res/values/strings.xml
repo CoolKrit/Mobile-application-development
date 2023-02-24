@@ -3,4 +3,13 @@
     <string name="app_name">AVANTO</string>
     <string name="splash_corners">SplashCorners</string>
     <!--Splash Screen End-->
+
+    <!--Sign In Start-->
+    <string name="signin_text">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="activity_link">Have not an account yet? <u>Sign Up</u></string>
+    <!--Sign In End-->
 </resources>
