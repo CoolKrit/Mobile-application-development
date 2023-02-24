@@ -25,7 +25,7 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
 
-        TextView sign_in_text = findViewById(R.id.signup_text);
+        TextView sign_in_text = findViewById(R.id.signin_text);
         sign_in_text.setText("Sign In");
         TextView or_with_text = findViewById(R.id.or_with);
         or_with_text.setText("Or with");
@@ -44,8 +44,8 @@ public class SignInActivity extends AppCompatActivity {
         });
     }
 
-//    public void onSignUpClick(View view) {
-//        Intent intent = new Intent(this, SignUpActivity.class);
-//        startActivity(intent);
-//    }
+    public void onSignUpClick(View view) {
+        Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
 }

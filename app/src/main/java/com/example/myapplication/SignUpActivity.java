@@ -18,6 +18,11 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        TextView sign_up_text = findViewById(R.id.signup_text);
+        sign_up_text.setText("Sign Up");
+        TextView or_with_text = findViewById(R.id.or_with2);
+        or_with_text.setText("Or with");
+
         TextView your_email = findViewById(R.id.signup_email);
         String emailname = getIntent().getStringExtra("email_name_key");
         your_email.setText(your_email.getText().toString() + emailname);
