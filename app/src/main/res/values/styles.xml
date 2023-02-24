@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="avanto">
+        <item name="android:textSize">48sp</item>
+        <item name="android:letterSpacing">0.25</item>
+        <item name="android:textColor">#FFFDFE</item>
+        <item name="android:fontFamily">@font/sticknobills_semibold</item>
+    </style>
+</resources>
