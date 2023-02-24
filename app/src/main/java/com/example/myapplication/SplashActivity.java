@@ -2,12 +2,9 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.HandlerThread;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
-import java.util.logging.Handler;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -25,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this, SignInActivity.class));
                     finish();
                 }
             }

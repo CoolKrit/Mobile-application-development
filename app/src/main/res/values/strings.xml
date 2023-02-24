@@ -11,6 +11,12 @@
     <string name="remember_me">Remember me</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="or_with">Or with</string>
-    <string name="activity_link">Have not an account yet? <u>Sign Up</u></string>
+    <string name="activity_link_signup">Have not an account yet? <u>Sign Up</u></string>
     <!--Sign In End-->
+
+    <!--Sign Up Start-->
+    <string name="signup_text">Sign Up</string>
+    <string name="user_name">Name</string>
+    <string name="activity_link_signin">Already have an account? <u>Sign In</u></string>
+    <!--Sign Up End-->
 </resources>
