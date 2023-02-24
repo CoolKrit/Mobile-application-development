@@ -8,7 +8,7 @@
     android:background="@color/splash_background">
 
     <ImageView
-        android:id="@+id/signin_corner1"
+        android:id="@+id/signup_corner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/splash_corners"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/signin_corner2"
+        android:id="@+id/signup_corner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/splash_corners"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/signin_text"
+            android:id="@+id/signup_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -46,7 +46,7 @@
             android:textAppearance="@style/general" />
 
         <EditText
-            android:id="@+id/signin_email"
+            android:id="@+id/signup_email"
             android:layout_width="258dp"
             android:layout_height="40dp"
             android:layout_marginTop="26dp"
@@ -64,7 +64,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/signin_password"
+            android:id="@+id/signup_password1"
             android:layout_width="258dp"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
@@ -195,11 +195,12 @@
         app:layout_constraintTop_toBottomOf="@+id/facebook_button" />
 
     <TextView
-        android:id="@+id/signup_text"
+        android:id="@+id/signup_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/activity_link"
+        android:onClick="onSignUpClick"
+        android:text="@string/activity_link_signup"
         android:textAppearance="@style/general"
         android:textColor="@color/border_choose"
         android:textSize="16sp"
