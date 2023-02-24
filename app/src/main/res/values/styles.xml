@@ -6,4 +6,10 @@
         <item name="android:textColor">#FFFDFE</item>
         <item name="android:fontFamily">@font/sticknobills_semibold</item>
     </style>
+
+    <style name="general">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFDFE</item>
+        <item name="android:fontFamily">@font/lexend_semibold</item>
+    </style>
 </resources>

@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_signin);
 
         Toast.makeText(MainActivity.this, "onCreate", duration).show();
         Log.i(TAG, "onCreate");
