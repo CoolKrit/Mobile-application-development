@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="avanto">
+    <!--App Name-->
+    <style name="Avanto">
         <item name="android:textSize">48sp</item>
         <item name="android:letterSpacing">0.25</item>
         <item name="android:textColor">#FFFDFE</item>
         <item name="android:fontFamily">@font/sticknobills_semibold</item>
     </style>
 
+    <!--Text-->
     <style name="general">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">#FFFDFE</item>
         <item name="android:fontFamily">@font/lexend_semibold</item>
+    </style>
+
+    <!--TextInputLayout-->
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_color</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+    </style>
+
+    <!--CustomButton-->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+
     </style>
 </resources>

@@ -30,7 +30,7 @@ public class SignInActivity extends AppCompatActivity {
         TextView or_with_text = findViewById(R.id.or_with);
         or_with_text.setText("Or with");
 
-        email = findViewById(R.id.signup_email);
+        email = findViewById(R.id.emailInput);
         TextView sign_up_text = findViewById(R.id.signup_link);
         Intent intent_signup = new Intent(this, SignUpActivity.class);
 

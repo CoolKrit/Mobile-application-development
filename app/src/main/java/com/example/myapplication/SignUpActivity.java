@@ -23,7 +23,7 @@ public class SignUpActivity extends AppCompatActivity {
         TextView or_with_text = findViewById(R.id.or_with2);
         or_with_text.setText("Or with");
 
-        TextView your_email = findViewById(R.id.signup_email);
+        TextView your_email = findViewById(R.id.emailInput);
         String emailname = getIntent().getStringExtra("email_name_key");
         your_email.setText(your_email.getText().toString() + emailname);
     }
