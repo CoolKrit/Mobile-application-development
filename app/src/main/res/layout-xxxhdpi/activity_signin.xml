@@ -28,38 +28,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/signup_text"
+            android:id="@+id/signin_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/signup_text"
+            android:text="@string/signin_text"
+            android:textAlignment="center"
             android:textAppearance="@style/general" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/nameField"
-            style="@style/TextInputLayoutStyle"
-            android:layout_width="258dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
-            android:hint="@string/user_name"
-            android:textColorHint="@color/text_color"
-            app:endIconMode="clear_text"
-            app:endIconTint="@color/text_color">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nameInput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_person"
-                android:drawablePadding="12dp"
-                android:ems="10"
-                android:maxLength="15"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:textAppearance="@style/general"
-                android:textSize="14sp" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailField"
@@ -67,7 +42,7 @@
             android:layout_width="258dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:hint="@string/email"
             android:textColorHint="@color/text_color"
             app:endIconMode="clear_text"
@@ -113,6 +88,43 @@
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:buttonTint="@color/border_choose"
+                android:checked="false"
+                android:text="@string/remember_me"
+                android:textAppearance="@style/general"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="27dp"
+                android:text="@string/forgot_password"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/general"
+                android:textColor="@color/border_choose"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signup_button"
             android:layout_width="258dp"
@@ -121,7 +133,7 @@
             android:layout_marginTop="24dp"
             android:background="@drawable/signin_button_shape"
             android:backgroundTint="@color/border_choose"
-            android:text="@string/signup_text"
+            android:text="@string/signin_text"
             android:textAppearance="@style/general"
             android:textSize="20sp" />
 
@@ -130,18 +142,18 @@
             android:layout_height="match_parent">
 
             <View
-                android:id="@+id/signup_line1"
+                android:id="@+id/signin_line1"
                 android:layout_width="80dp"
                 android:layout_height="1dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/ic_line"
-                app:layout_constraintBottom_toBottomOf="@+id/or_with2"
+                app:layout_constraintBottom_toBottomOf="@+id/or_with"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/or_with2" />
+                app:layout_constraintTop_toTopOf="@+id/or_with" />
 
             <TextView
-                android:id="@+id/or_with2"
+                android:id="@+id/or_with"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
@@ -149,55 +161,59 @@
                 android:textAppearance="@style/general"
                 android:textColor="#CCFFFDFE"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toStartOf="@+id/signup_line2"
-                app:layout_constraintStart_toEndOf="@+id/signup_line1"
+                app:layout_constraintEnd_toStartOf="@+id/signin_line2"
+                app:layout_constraintStart_toEndOf="@+id/signin_line1"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <View
-                android:id="@+id/signup_line2"
+                android:id="@+id/signin_line2"
                 android:layout_width="80dp"
                 android:layout_height="1dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/ic_line"
-                app:layout_constraintBottom_toBottomOf="@+id/or_with2"
+                app:layout_constraintBottom_toBottomOf="@+id/or_with"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/or_with2" />
+                app:layout_constraintTop_toTopOf="@+id/or_with" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/facebook_button2"
+            android:id="@+id/facebook_button"
             android:layout_width="312dp"
             android:layout_height="48dp"
+            android:layout_marginStart="0dp"
             android:layout_marginTop="24dp"
+            android:layout_marginEnd="0dp"
             android:background="@drawable/signin_button_shape"
             android:backgroundTint="@color/facebook_blue"
-            android:text="Sign Up with Facebook"
+            android:text="Sign In with Facebook"
             android:textAllCaps="false" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/google_button2"
+            android:id="@+id/google_button"
             android:layout_width="312dp"
             android:layout_height="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/signin_button_shape"
-            android:backgroundTint="#FFFDFE"
-            android:text="Sign Up with Google"
+            android:backgroundTint="@color/white"
+            android:text="Sign In with Google"
             android:textAllCaps="false"
-            android:textColor="#000000" />
+            android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/signin_link"
+            android:id="@+id/signup_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:onClick="onSignInClick"
-            android:text="@string/activity_link_signin"
+            android:onClick="onSignUpClick"
+            android:text="@string/activity_link_signup"
+            android:textAlignment="center"
             android:textAppearance="@style/general"
             android:textColor="@color/border_choose"
             android:textSize="16sp" />
+
 
     </LinearLayout>
 
