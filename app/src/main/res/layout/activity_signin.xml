@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/signup_corner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
         android:contentDescription="@string/splash_corners"
         android:rotation="90"
         android:src="@drawable/ic_splash_corners"
@@ -38,10 +38,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailField"
             style="@style/TextInputLayoutStyle"
-            android:layout_width="258dp"
-            android:layout_height="wrap_content"
+            android:layout_width="208dp"
+            android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:hint="@string/email"
             android:textColorHint="@color/text_color"
             app:endIconMode="clear_text"
@@ -64,10 +64,10 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordField"
             style="@style/TextInputLayoutStyle"
-            android:layout_width="258dp"
-            android:layout_height="wrap_content"
+            android:layout_width="208dp"
+            android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="11dp"
             android:hint="@string/password"
             android:textColorHint="@color/text_color"
             app:endIconMode="password_toggle"
@@ -93,9 +93,9 @@
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:layout_width="118dp"
+                android:layout_width="85dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
+                android:layout_marginStart="8dp"
                 android:buttonTint="@color/border_choose"
                 android:checked="false"
                 android:text="@string/remember_me"
@@ -108,10 +108,9 @@
 
             <TextView
                 android:id="@+id/forgot_password"
-                android:layout_width="wrap_content"
+                android:layout_width="79dp"
                 android:layout_height="wrap_content"
 
-                android:layout_marginEnd="27dp"
                 android:text="@string/forgot_password"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -126,10 +125,10 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/signup_button"
-            android:layout_width="258dp"
-            android:layout_height="54dp"
+            android:layout_width="172dp"
+            android:layout_height="36dp"
             android:layout_gravity="center"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/signin_button_shape"
             android:backgroundTint="@color/border_choose"
             android:text="@string/signin_text"
@@ -142,7 +141,7 @@
 
             <View
                 android:id="@+id/signin_line1"
-                android:layout_width="80dp"
+                android:layout_width="54dp"
                 android:layout_height="1dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -155,7 +154,7 @@
                 android:id="@+id/or_with"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/or_with"
                 android:textAppearance="@style/general"
                 android:textColor="#CCFFFDFE"
@@ -166,7 +165,7 @@
 
             <View
                 android:id="@+id/signin_line2"
-                android:layout_width="80dp"
+                android:layout_width="54dp"
                 android:layout_height="1dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -179,9 +178,10 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/facebook_button"
-            android:layout_width="312dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="208dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
             android:background="@drawable/signin_button_shape"
             android:backgroundTint="@color/facebook_blue"
             android:text="Sign In with Facebook"
@@ -189,8 +189,9 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/google_button"
-            android:layout_width="312dp"
-            android:layout_height="48dp"
+            android:layout_width="208dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:background="@drawable/signin_button_shape"
             android:backgroundTint="@color/white"
@@ -203,20 +204,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="11dp"
             android:onClick="onSignUpClick"
             android:text="@string/activity_link_signup"
             android:textAppearance="@style/general"
             android:textColor="@color/border_choose"
-            android:textSize="16sp" />
+            android:textSize="11sp" />
 
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/signup_corner2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
         android:contentDescription="@string/splash_corners"
         android:rotation="-90"
         android:src="@drawable/ic_splash_corners"

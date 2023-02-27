@@ -39,7 +39,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/emailField"
             style="@style/TextInputLayoutStyle"
-            android:layout_width="258dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="24dp"
@@ -65,7 +65,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passwordField"
             style="@style/TextInputLayoutStyle"
-            android:layout_width="258dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
@@ -94,9 +94,9 @@
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:layout_width="118dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
+                android:layout_marginStart="8dp"
                 android:buttonTint="@color/border_choose"
                 android:checked="false"
                 android:text="@string/remember_me"
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_marginEnd="27dp"
+                android:layout_marginEnd="8dp"
                 android:text="@string/forgot_password"
                 android:textAlignment="center"
                 android:textAllCaps="false"
