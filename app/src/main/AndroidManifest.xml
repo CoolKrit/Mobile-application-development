@@ -22,10 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignInActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".SignUpActivity"
+            android:name=".SignActivity"
             android:exported="true"></activity>
     </application>
 

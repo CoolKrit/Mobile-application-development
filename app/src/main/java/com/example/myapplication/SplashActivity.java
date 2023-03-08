@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    startActivity(new Intent(SplashActivity.this, SignInActivity.class));
+                    startActivity(new Intent(SplashActivity.this, SignActivity.class));
                     finish();
                 }
             }

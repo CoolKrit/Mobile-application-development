@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/splash_background">
 
     <ImageView
-        android:id="@+id/splash_corner1"
+        android:id="@+id/signin_corner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rotation="180"
         android:contentDescription="@string/splash_corners"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_splash_corners" />
-
-    <TextView
-        android:id="@+id/avanto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAlignment="center"
-        android:textAppearance="@style/Avanto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:rotation="90"
+        android:src="@drawable/ic_splash_corners"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.myapplication.Fragments.SignInFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_sign_in" />
+
     <ImageView
-        android:id="@+id/splash_corner2"
+        android:id="@+id/signin_corner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/splash_corners"
+        android:rotation="-90"
         android:src="@drawable/ic_splash_corners"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
